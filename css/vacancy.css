@@ -1,0 +1,188 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*header*/
+.header {
+    position: relative;
+    width: 100%;
+    height: 13vh;
+    right: 0;
+    margin-left: 10%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2%;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 10%;
+    margin-left: 2%;
+}
+
+.nav {  
+    position: absolute;
+    margin-top: 1.8%;   
+    left: -22%;
+    right: 0;
+    text-align: center;
+}
+
+.nav a {
+    position: relative;
+    margin: 0 22px;
+
+    font-family: Viaoda Libre;
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 5%;
+    background: #000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.nav a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.nombers {
+    display: flex;
+    position: absolute;
+    right: 18%;
+    margin-top: 0.9%;  
+    text-align: center;
+}
+
+.nombers_n {
+    margin-right: 25px;
+
+    font-family: Viaoda Libre;
+    color: #000;
+    font-size: 16px;
+}
+
+/*bg*/
+.bg__menu {
+    position: absolute;
+    width: 100%;
+    height: 0.4vh;
+
+    background: linear-gradient(180deg, #000000 -538.2%, rgba(228, 228, 228, 0) 100%);
+}
+
+/*vacancy*/
+.vacancy {
+    position: relative;
+    margin-left: 12%;
+    margin-right: 10%;
+    margin-bottom: 7%;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.all {
+    width: 70%;
+}
+
+.vacancy h6 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 14%;
+    margin-bottom: 1.5%;
+}
+
+.inform_ab_vac {
+    margin: 9% 0;
+    margin-bottom: 5%;
+}
+
+.inform_ab_vac h5 {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 1%;
+}
+
+.inform_ab_vac .city {
+    font-size: 14px;
+}
+
+.inform_ab_vac .text {
+    margin: 3% 0;
+    margin-top: 3%;
+}
+
+.inform_ab_vac .bold {
+    font-weight: 600;
+}
+
+.button {
+    height: 45px;
+    margin: 5.5% 0;
+    margin-bottom: 4%;
+}
+
+.button input {
+    height: 100%;
+    width: 40%;
+    padding: 1% 5%;
+    color: black;
+    font-size: 16px;
+    border: none;
+    background: rgba(190, 190, 190, 0.4);
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+  .button input:hover {
+    background: rgba(190, 190, 190, 0.7);
+    text-decoration: underline;
+}
+
+/*bg*/
+.bg__footer {
+    position: absolute;
+    width: 100%;
+    height: 0.4vh;
+    margin-top: 1.5%;
+
+    background: linear-gradient(180deg, #000000 -538.2%, rgba(228, 228, 228, 0) 100%);
+}
+
+/*Подвал*/
+footer {
+    position: relative;
+    margin: 0;
+    padding: 5vw;
+    width: 100%;
+    height: 2vw;
+}
+
+.fottext {
+    font-family: Viaoda Libre;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+}

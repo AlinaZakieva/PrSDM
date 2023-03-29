@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+.header {
+    position: relative;
+    width: 100%;
+    height: 13vh;
+    right: 0;
+    margin-left: 10%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2%;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 10%;
+    margin-left: 2%;
+}
+
+.nav {  
+    position: absolute;
+    margin-top: 1.8%;   
+    left: -22%;
+    right: 0;
+    text-align: center;
+}
+
+.nav a {
+    position: relative;
+    margin: 0 22px;
+
+    font-family: Viaoda Libre;
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 5%;
+    background: #000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.nav a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.nombers {
+    display: flex;
+    position: absolute;
+    right: 18%;
+    margin-top: 0.9%;  
+    text-align: center;
+}
+
+.nombers_n {
+    margin-right: 25px;
+
+    font-family: Viaoda Libre;
+    color: #000;
+    font-size: 16px;
+}
+
+/*bg*/
+.bg__menu {
+    position: absolute;
+    width: 100%;
+    height: 0.4vh;
+
+    background: linear-gradient(180deg, #000000 -538.2%, rgba(228, 228, 228, 0) 100%);
+}
+
+/*contacts*/
+.contents {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.contents h6 {
+    margin-top: 17%;
+    margin-bottom: 10%;
+}
+
+.h6_once {
+    position: relative;
+    text-align: center;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #2D0221;
+}
+
+  .bold__text {
+    font-weight: 600;
+  }
+
+  form .user-details {
+    margin: 20px;
+  }
+
+  form .user-details .input-box {
+    width: calc(100% - 2 - 20px);
+  }
+
+  .user-details .input-box input {
+    height: 10%;
+    width: 50%;
+    padding: 2%;
+    padding-left: 5%;
+    margin-top: 3%;
+
+    font-family: 'Intert', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #000;
+  }
+
+  form .button_email {
+    height: 45px;
+    margin: 4% 0;
+    margin-bottom: 3%;
+  }
+
+  form .button_email input {
+    height: 100%;
+    width: 35%;
+    outline: none;
+    color: black;
+    font-family: Viaoda Libre;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    /*border: 1px solid #000000;*/
+    background: rgba(190, 190, 190, 0.7);
+    border-radius: 30px;
+    letter-spacing: 1px;
+  }
+
+  form .button_email input:hover {
+    background: rgba(190, 190, 190, 0.7);
+    text-decoration: underline;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+
+/*map*/
+.map {
+    padding: 5% 4%;
+    margin-bottom: 5%;
+}
+
+/*bg*/
+.bg__footer {
+    position: absolute;
+    width: 100%;
+    height: 0.4vh;
+    margin-top: 1.5%;
+
+    background: linear-gradient(180deg, #000000 -538.2%, rgba(228, 228, 228, 0) 100%);
+}
+
+/*Подвал*/
+footer {
+    position: relative;
+    margin: 0;
+    padding: 5vw;
+    width: 100%;
+    height: 2vw;
+}
+
+.fottext {
+    font-family: Viaoda Libre;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+}
